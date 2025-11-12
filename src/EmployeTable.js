@@ -17,7 +17,7 @@ export const EmployeTable = () => {
         const data = await response.json();
         setList(data);
       } catch (error) {
-        alert("Error fetching employee data:", error)
+        alert("failed to fetch data", error)
         console.error("Error fetching employee data:", error);
       }
       setIsNext(false)
